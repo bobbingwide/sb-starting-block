@@ -40,8 +40,13 @@ function oik_sb_sb_starting_block_loaded() {
  * @return string
  */
 function oik_sb_sb_starting_block_dynamic_block( $attributes ) {
-	// @TODO Need a standard block wrapper here.
-	$html = __( 'Starting block.', 'sb-starting-block');
+	$classes = '';
+	if ( isset( $attributes['textAlign'] ) ) {
+		$classes .= 'has-text-align-' . $attributes['textAlign'];
+	}
+	$wrapper_attributes = get_block_wrapper_attributes( array( 'class' => $classes ) );
+	$content = __( 'Starting block.', 'sb-starting-block');
+	$html = sprintf( '<div %1$s>%2$s</div>', $wrapper_attributes, $content );
 	// 	$html=\oik\oik_blocks\oik_blocks_check_server_func( "shortcodes/starting-block.php", "sb-starting-block", "oik_sb_sb_starting_block" );
 	return $html;
 }

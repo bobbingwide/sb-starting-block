@@ -1,14 +1,14 @@
 {
 	"apiVersion": 2,
-	"name": "oik-sb/sb-post-edit-block",
-	"title": "Post Edit block",
+	"name": "oik-sb/sb-starting-block",
+	"title": "Starting block",
 	"category": "widgets",
 	"icon": "edit-page",
-	"description": "Post edit block to allow direct editing of the post",
+	"description": "Starting Server Side Rendered block",
 	"supports": {
 		"html": false
 	},
-	"textdomain": "sb-post-edit-block",
+	"textdomain": "sb-starting-block",
 	"editorScript": "file:./build/index.js",
 	"editorStyle": "file:./build/index.css",
 	"style": "file:./build/style-index.css"

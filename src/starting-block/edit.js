@@ -33,7 +33,7 @@ import './editor.scss';
 export default function Edit ( { attributes, className, isSelected, setAttributes } ) {
 	return (
 	<ServerSideRender
-		block="oik-sb/sb-post-edit-block" attributes={attributes}
+		block="oik-sb/sb-starting-block" attributes={attributes}
 	/>
 	);
 }

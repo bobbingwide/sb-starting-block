@@ -1,7 +1,7 @@
 {
-	"name": "sb-post-edit-block",
+	"name": "sb-starting-block",
 	"version": "0.0.0",
-	"description": "Post edit block to allow direct editing of the post",
+	"description": "Starting Server Side Rendered Block",
 	"author": "bobbingwide",
 	"license": "GPLv3",
 	"main": "build/index.js",
@@ -13,9 +13,9 @@
 		"start": "wp-scripts start",
 		"packages-update": "wp-scripts packages-update",
 	  	"dev": "wp-scripts start",
-	  	"makepot": "wp i18n make-pot . languages/sb-post-edit-block.pot --exclude=node_modules,vendor,src",
+	  	"makepot": "wp i18n make-pot . languages/sb-starting-block.pot --exclude=node_modules,vendor,src",
 	  	"makejson": "wp i18n make-json languages --no-purge",
-	  	"l10n": "l10n sb-post-edit-block"
+	  	"l10n": "l10n sb-starting-block"
 	},
 	"dependencies": {
 		"@wordpress/block-editor": "^5.3.3",

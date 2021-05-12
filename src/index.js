@@ -1,1 +1,1 @@
-import './post-edit';
+import './starting-block';

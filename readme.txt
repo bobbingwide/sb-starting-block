@@ -6,7 +6,7 @@ Stable tag:        0.0.0
 License:           GPLv3
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
-Starting point for a single block server side rendered block
+Starting point for a single block server side rendered block.
 
 == Description ==
 The Starting block plugin is a single block plugin to be used as the starting point for future Server Side Rendered blocks.

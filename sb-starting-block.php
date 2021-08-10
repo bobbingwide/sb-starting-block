@@ -4,7 +4,7 @@
  * Description:       Starting point for a single block server side rendered block
  * Requires at least: 5.7
  * Requires PHP:      7.3
- * Version:           0.0.0
+ * Version:           0.0.1
  * Author:            bobbingwide
  * License:           GPLv3
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
@@ -22,14 +22,14 @@
  */
 function oik_sb_sb_starting_block_block_init() {
 	$args = [ 'render_callback' => 'oik_sb_sb_starting_block_dynamic_block'];
-	register_block_type_from_metadata( __DIR__, $args );
+	register_block_type_from_metadata( __DIR__ . '/src/starting-block', $args );
 }
 
 function oik_sb_sb_starting_block_loaded() {
 	add_action( 'init', 'oik_sb_sb_starting_block_block_init' );
 }
 /**
- * Implements post-edit block.
+ * Implements Starting block.
  *
  * If the user is authorised return a post edit link for the current post.
  *

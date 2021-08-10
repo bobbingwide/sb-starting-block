@@ -4,6 +4,7 @@
  * @see https://developer.wordpress.org/block-editor/packages/packages-i18n/
  */
 import { __ } from '@wordpress/i18n';
+import classnames from 'classnames';
 
 /**
  * React hook that is used to mark the block wrapper element.
@@ -13,7 +14,7 @@ import { __ } from '@wordpress/i18n';
  */
 import { useBlockProps } from '@wordpress/block-editor';
 
-import { ServerSideRender } from '@wordpress/editor';
+import ServerSideRender from '@wordpress/server-side-render';
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
  * Those files can contain any CSS code that gets applied to the editor.
@@ -31,9 +32,17 @@ import './editor.scss';
  * @return {WPElement} Element to render.
  */
 export default function Edit ( { attributes, className, isSelected, setAttributes } ) {
+	const { textAlign } = attributes;
+	const blockProps = useBlockProps( {
+		className: classnames( {
+			[ `has-text-align-${ textAlign }` ]: textAlign,
+		} ),
+	} );
 	return (
+		<div { ...blockProps}>
 	<ServerSideRender
 		block="oik-sb/sb-starting-block" attributes={attributes}
 	/>
+		</div>
 	);
 }

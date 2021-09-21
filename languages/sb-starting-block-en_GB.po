@@ -1,0 +1,30 @@
+# Copyright (C) 2021 bobbingwide
+# This file is distributed under the GPLv3.
+msgid ""
+msgstr ""
+"Project-Id-Version: Starting block 0.0.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/sb-starting-block\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Plural-Forms: nplurals=2; plural=n == 1 ? 0 : 1;\n"
+"Language: en_GB\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2021-09-21T18:14:42+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.5.0\n"
+"X-Domain: sb-starting-block\n"
+msgid "Starting block"
+msgstr "Starting block"
+
+msgid "Starting point for a single block server side rendered block"
+msgstr "Starting point for a single block server side rendered block"
+
+msgid "bobbingwide"
+msgstr "bobbingwide"
+
+#: sb-starting-block.php:79
+msgid "Starting block rendered at %s"
+msgstr "Starting block rendered at %s"
+

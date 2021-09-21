@@ -32,7 +32,7 @@ Pre-requisites:
 
 You need to have `npm` - Node Package Manager - installed.
 
-For some basic instructions see the Build process section of [oik-blocks summary of blocks README](https://github.com/bobbingwide/oik-blocks/tree/master/blocks)
+For some basic instructions see the Build process section of [oik-blocks summary of blocks README](https://github.com/bobbingwide/oik-blocks/blob/master/src/README.md)
 
 Many people run the `npm` command from the command line.
 

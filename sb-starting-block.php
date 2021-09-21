@@ -75,6 +75,7 @@ function oik_sb_sb_starting_block_dynamic_block( $attributes ) {
 	}
 	$wrapper_attributes = get_block_wrapper_attributes( array( 'class' => $classes ) );
 	$localised_time = date_i18n( get_option( 'time_format'));
+	/* translators: %s: time in user's preferred format */
 	$content = sprintf( __( 'Starting block rendered at %s', 'sb-starting-block'), $localised_time );
 	$html = sprintf( '<div %1$s>%2$s</div>', $wrapper_attributes, $content );
 	return $html;

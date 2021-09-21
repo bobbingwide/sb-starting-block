@@ -21,6 +21,7 @@
  * @see https://developer.wordpress.org/block-editor/tutorials/block-tutorial/writing-your-first-block-type/
  */
 function oik_sb_sb_starting_block_block_init() {
+
 	$args = [ 'render_callback' => 'oik_sb_sb_starting_block_dynamic_block'];
 	register_block_type_from_metadata( __DIR__ . '/src/starting-block', $args );
 }
@@ -45,9 +46,9 @@ function oik_sb_sb_starting_block_dynamic_block( $attributes ) {
 		$classes .= 'has-text-align-' . $attributes['textAlign'];
 	}
 	$wrapper_attributes = get_block_wrapper_attributes( array( 'class' => $classes ) );
-	$content = __( 'Starting block.', 'sb-starting-block');
+	$localised_time = date_i18n( get_option( 'time_format'));
+	$content = sprintf( __( 'Starting block rendered at %s', 'sb-starting-block'), $localised_time );
 	$html = sprintf( '<div %1$s>%2$s</div>', $wrapper_attributes, $content );
-	// 	$html=\oik\oik_blocks\oik_blocks_check_server_func( "shortcodes/starting-block.php", "sb-starting-block", "oik_sb_sb_starting_block" );
 	return $html;
 }
 

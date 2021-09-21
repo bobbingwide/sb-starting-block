@@ -4,6 +4,7 @@
 	"title": "Starting block",
 	"category": "widgets",
 	"icon": "megaphone",
+  "keywords": [ "Starting", "block", "dynamic", "static" ],
 	"description": "Starting block - Server Side Rendered",
   "supports": {
 	"align": true,

@@ -21,9 +21,39 @@
  * @see https://developer.wordpress.org/block-editor/tutorials/block-tutorial/writing-your-first-block-type/
  */
 function oik_sb_sb_starting_block_block_init() {
-
+	load_plugin_textdomain( 'sb-starting-block', false, 'sb-starting-block/languages' );
 	$args = [ 'render_callback' => 'oik_sb_sb_starting_block_dynamic_block'];
 	register_block_type_from_metadata( __DIR__ . '/src/starting-block', $args );
+
+	/**
+	 * Localise the script by loading the required strings for the build/index.js file
+	 * from the locale specific .json file in the languages folder.
+	 * oik-sb/sb-starting-block
+	 */
+	$ok = wp_set_script_translations( 'oik-sb-sb-starting-block-editor-script', 'sb-starting-block' , __DIR__ .'/languages' );
+	//bw_trace2( $ok, "OK?");
+	add_filter( 'load_script_textdomain_relative_path', 'oik_sb_sb_starting_block_load_script_textdomain_relative_path', 10, 2);
+
+}
+
+/**
+ * Filters $relative so that md5's match what's expected.
+ *
+ * Depending on how it was built the `build/index.js` may be preceded by `./` or `src/block-name/../../`.
+ * In either of these situations we want the $relative value to be returned as `build/index.js`.
+ * This then produces the correct md5 value and the .json file is found.
+ *
+ * @param $relative
+ * @param $src
+ *
+ * @return mixed
+ */
+function oik_sb_sb_starting_block_load_script_textdomain_relative_path( $relative, $src ) {
+	if ( false !== strrpos( $relative, './build/index.js' )) {
+		$relative = 'build/index.js';
+	}
+	//bw_trace2( $relative, "relative");
+	return $relative;
 }
 
 function oik_sb_sb_starting_block_loaded() {
@@ -32,9 +62,7 @@ function oik_sb_sb_starting_block_loaded() {
 /**
  * Implements Starting block.
  *
- * If the user is authorised return a post edit link for the current post.
- *
- * @param $attrs
+ * @param $attributes
  * @param $content
  * @param $tag
  *

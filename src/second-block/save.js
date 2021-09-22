@@ -25,7 +25,7 @@ import { useBlockProps } from '@wordpress/block-editor';
 export default function save() {
 	return (
 		<p {...useBlockProps.save()}>
-			{__('Second block – hello from the saved content!', 'second-block')}
+			{__('Second block – hello from the saved content!', 'sb-starting-block')}
 		</p>
 	);
 }

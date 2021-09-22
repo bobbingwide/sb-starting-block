@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2021-09-21T18:14:42+00:00\n"
+"POT-Creation-Date: 2021-09-22T06:24:49+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.5.0\n"
 "X-Domain: sb-starting-block\n"
@@ -27,6 +27,63 @@ msgid "bobbingwide"
 msgstr ""
 
 #. translators: %s: time in user's preferred format
-#: sb-starting-block.php:79
+#: sb-starting-block.php:81
 msgid "Starting block rendered at %s"
+msgstr ""
+
+#: build/index.js:71
+#: build/index.js:38
+msgid "Second block – hello from the editor!"
+msgstr ""
+
+#: build/index.js:174
+#: build/index.js:109
+msgid "Second block – hello from the saved content!"
+msgstr ""
+
+#: src/second-block/block.json
+msgctxt "block title"
+msgid "Second block"
+msgstr ""
+
+#: src/second-block/block.json
+msgctxt "block keyword"
+msgid "Second"
+msgstr ""
+
+#: src/second-block/block.json
+#: src/starting-block/block.json
+msgctxt "block keyword"
+msgid "block"
+msgstr ""
+
+#: src/second-block/block.json
+#: src/starting-block/block.json
+msgctxt "block keyword"
+msgid "static"
+msgstr ""
+
+#: src/second-block/block.json
+msgctxt "block description"
+msgid "Second starting block"
+msgstr ""
+
+#: src/starting-block/block.json
+msgctxt "block title"
+msgid "Starting block"
+msgstr ""
+
+#: src/starting-block/block.json
+msgctxt "block keyword"
+msgid "Starting"
+msgstr ""
+
+#: src/starting-block/block.json
+msgctxt "block keyword"
+msgid "dynamic"
+msgstr ""
+
+#: src/starting-block/block.json
+msgctxt "block description"
+msgid "Starting block - Server Side Rendered"
 msgstr ""

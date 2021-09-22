@@ -2,7 +2,7 @@
 Contributors:      bobbingwide
 Tags:              block, starting, scaffold, SSR
 Tested up to:      5.7.0
-Stable tag:        0.0.0
+Stable tag:        0.0.1
 License:           GPLv3
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -22,10 +22,20 @@ You should not need to activate this plugin. If you do, it's just like any other
 2. Starting block - settings
 
 == Upgrade Notice ==
+= 0.0.1 =
+Update for an internationalized / localized version with multiple blocks.
+
 = 0.0.0 =
 First version to be used to replace any `[your name here]` shortcodes in FSE themes
 
 == Changelog ==
+= 0.0.1 =
+* Changed: Added oik-sb/second-block,[#2]((https://github.com/bobbingwide/sb-starting-block/issues/2)
+* Changed: Internationalized and localized into UK English and bbboing ( locale bb_BB ),[#2]((https://github.com/bobbingwide/sb-starting-block/issues/2)
+* Tested: With WordPress 5.8.1 and WordPress Multi Site
+* Tested: With Gutenberg 11.5.1
+* Tested: With PHP 8.0
+
 = 0.0.0 =
 * Added: First version of the server side rendered block,[#1](https://github.com/bobbingwide/sb-starting-block/issues/1)
 * Tested: With WordPress 5.7.1 and WordPress Multi Site

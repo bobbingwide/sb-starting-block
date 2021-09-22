@@ -24,6 +24,8 @@ function oik_sb_sb_starting_block_block_init() {
 	load_plugin_textdomain( 'sb-starting-block', false, 'sb-starting-block/languages' );
 	$args = [ 'render_callback' => 'oik_sb_sb_starting_block_dynamic_block'];
 	register_block_type_from_metadata( __DIR__ . '/src/starting-block', $args );
+	register_block_type_from_metadata( __DIR__ . '/src/second-block' );
+
 
 	/**
 	 * Localise the script by loading the required strings for the build/index.js file

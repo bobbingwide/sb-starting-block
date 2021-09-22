@@ -41,6 +41,7 @@ import { map, partial } from 'lodash';
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/
  */
 registerBlockType( 'oik-sb/sb-starting-block', {
+	example: {},
 	/**
 	 * @see ./edit.js
 	 */

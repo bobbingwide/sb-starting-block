@@ -26,6 +26,7 @@ import save from './save';
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/
  */
 registerBlockType('oik-sb/second-block', {
+	example: {},
 	/**
 	 * @see ./edit.js
 	 */

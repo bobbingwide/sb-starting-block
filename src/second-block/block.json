@@ -1,0 +1,14 @@
+{
+  "apiVersion": 2,
+  "name": "oik-sb/second-block",
+  "version": "0.0.0",
+  "title": "Second block",
+  "category": "widgets",
+  "icon": "clock",
+  "keywords": [ "Second", "block", "static" ],
+  "description": "Second starting block",
+  "supports": {
+	"html": false
+  },
+  "textdomain": "sb-starting-block"
+}

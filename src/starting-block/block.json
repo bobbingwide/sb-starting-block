@@ -21,7 +21,7 @@
 	  		"lineHeight": true
 		},
 		"spacing": {
-	  		"margin": true,
+	  		"margin": false,
 	  		"padding": true
 		}
   	},

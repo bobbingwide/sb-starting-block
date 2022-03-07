@@ -3,7 +3,11 @@
 	"version": "0.0.1",
 	"description": "Starting Server Side Rendered Block",
 	"author": "bobbingwide",
-	"license": "GPLv3",
+	"license": "GPL-2.0-or-later",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/bobbingwide/sb-starting-block.git"
+	},
 	"main": "build/index.js",
 	"scripts": {
 		"build": "wp-scripts build",
@@ -18,12 +22,12 @@
 		"l10n": "l10n sb-starting-block"
 	},
 	"dependencies": {
-		"@wordpress/block-editor": "^7.0.2",
-		"@wordpress/blocks": "^11.1.0",
-		"@wordpress/i18n": "^4.2.2",
+		"@wordpress/block-editor": "^8.2.0",
+		"@wordpress/blocks": "^11.2.2",
+		"@wordpress/i18n": "^4.3.1",
 		"postcss": "^8.3.6"
 	},
 	"devDependencies": {
-		"@wordpress/scripts": "^18.0.1"
+		"@wordpress/scripts": "^22.1.0"
 	}
 }

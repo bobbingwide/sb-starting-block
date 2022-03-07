@@ -40,6 +40,7 @@ export default function Edit ( { attributes, className, isSelected, setAttribute
 	} );
 	return (
 		<div { ...blockProps}>
+			<p>{__("Starting block translatable string", 'sb-starting-block')}</p>
 	<ServerSideRender
 		block="oik-sb/sb-starting-block" attributes={attributes}
 	/>

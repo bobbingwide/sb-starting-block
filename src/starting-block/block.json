@@ -26,7 +26,7 @@
 		}
   	},
 	"textdomain": "sb-starting-block",
-	"editorScript": "file:../../build/index.js",
-	"editorStyle": "file:../../build/index.css",
-	"style": "file:../../build/style-index.css"
+	"editorScript": "file:../../build/sb-starting-block.js",
+	"editorStyle": "file:../../build/sb-starting-block.css",
+	"style": "file:../../build/style-sb-starting-block.css"
 }

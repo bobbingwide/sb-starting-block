@@ -1,8 +1,8 @@
-# Copyright (C) 2021 bobbingwide
+# Copyright (C) 2022 bobbingwide
 # This file is distributed under the GPLv3.
 msgid ""
 msgstr ""
-"Project-Id-Version: Starting block 0.0.1\n"
+"Project-Id-Version: Starting block 0.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/sb-starting-block\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Language: en_GB\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2021-09-22T19:13:22+00:00\n"
+"POT-Creation-Date: 2022-03-06T23:43:59+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.5.0\n"
 "X-Domain: sb-starting-block\n"
@@ -24,60 +24,78 @@ msgstr "Starting point for a single block server side rendered block"
 msgid "bobbingwide"
 msgstr "bobbingwide"
 
-#: sb-starting-block.php:81
-msgid "Starting block rendered at %s"
-msgstr "Starting block rendered at %s"
+#: sb-starting-block.php:97
+msgid "Starting block rendered at %s on %s"
+msgstr "Starting block rendered at %s on %s"
 
-#: build/index.js:1
+#: build/sb-starting-block.js:76
+#: build/sb-starting-block.js:43
+msgid "Starting block translatable string"
+msgstr "Starting block translatable string"
+
+#: build/second-block.js:56
+#: build/second-block.js:35
 msgid "Second block – hello from the editor!"
 msgstr "Second block – hello from the editor!"
 
-#: build/index.js:1
+#: build/second-block.js:161
+#: build/second-block.js:108
 msgid "Second block – hello from the saved content!"
 msgstr "Second block – hello from the saved content!"
 
+#: build/second-block/block.json
 #: src/second-block/block.json
 msgctxt "block title"
 msgid "Second block"
 msgstr "Second block"
 
+#: build/second-block/block.json
 #: src/second-block/block.json
 msgctxt "block keyword"
 msgid "Second"
 msgstr "Second"
 
+#: build/second-block/block.json
+#: build/starting-block/block.json
 #: src/second-block/block.json
 #: src/starting-block/block.json
 msgctxt "block keyword"
 msgid "block"
 msgstr "block"
 
+#: build/second-block/block.json
+#: build/starting-block/block.json
 #: src/second-block/block.json
 #: src/starting-block/block.json
 msgctxt "block keyword"
 msgid "static"
 msgstr "static"
 
+#: build/second-block/block.json
 #: src/second-block/block.json
 msgctxt "block description"
 msgid "Second starting block"
 msgstr "Second starting block"
 
+#: build/starting-block/block.json
 #: src/starting-block/block.json
 msgctxt "block title"
 msgid "Starting block"
 msgstr "Starting block"
 
+#: build/starting-block/block.json
 #: src/starting-block/block.json
 msgctxt "block keyword"
 msgid "Starting"
 msgstr "Starting"
 
+#: build/starting-block/block.json
 #: src/starting-block/block.json
 msgctxt "block keyword"
 msgid "dynamic"
 msgstr "dynamic"
 
+#: build/starting-block/block.json
 #: src/starting-block/block.json
 msgctxt "block description"
 msgid "Starting block - Server Side Rendered"

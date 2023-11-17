@@ -2,8 +2,8 @@
 ![banner](assets/sb-starting-block-banner-772x250.jpg)
 * Contributors:      bobbingwide
 * Tags:              block, starting, scaffold, SSR, static
-* Tested up to:      5.9.1
-* Stable tag:        0.1.0
+* Tested up to:      6.4.1
+* Stable tag:        0.1.1
 * License:           GPLv3
 * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -46,9 +46,9 @@ editorStyle contains the CSS for the block editor
 style contains the CSS for both the front end and the block editor
 
 An additional file suffixed `.asset.php` is produced for each entry point.
-Used during block registratio, it lists the package dependencies for the block editor.
+Used during block registration, it lists the package dependencies for the block editor.
 
-The build process requires wp-scripts v22.1.0 or later.
+The build process requires wp-scripts v26.17.0 or later.
 
 ### Internationalization and Localization 
 At build time `wp-scripts` copies each `block.json` file into a subdirectory of the `build` folder.
@@ -84,6 +84,9 @@ You should not need to activate this plugin. If you do, it's just like any other
 3. Second block - editor display, bbboing language
 
 ## Upgrade Notice 
+# 0.1.1 
+Update for support for PHP 8.1 and PHP 8.2
+
 # 0.1.0 
 Update for each block's components packaged separately.
 
@@ -94,6 +97,15 @@ Update for an internationalized / localized version with multiple blocks.
 First version to be used to replace any `[your name here]` shortcodes in FSE themes
 
 ## Changelog 
+# 0.1.1 
+* Changed: Add PHPUnit tests for PHP 8.1 and PHP 8.2 #4
+* Changed: Update build files #3
+* Changed: Updated wp-scripts #3
+* Tested: With WordPress 6.4.1 and WordPress Multisite
+* Tested: With Gutenberg 17.0.2
+* Tested: With PHP 8.1 and PHP 8.2
+* Tested: With PHPUnit 9.6
+
 # 0.1.0 
 * Changed: Update language files [#3](https://github.com/bobbingwide/sb-starting-block/issues/3)
 * Changed: Update build files #3

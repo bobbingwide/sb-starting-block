@@ -4,7 +4,7 @@
  * Description:       Starting point for (single) block server side rendered blocks
  * Requires at least: 5.7
  * Requires PHP:      7.3
- * Version:           0.1.0
+ * Version:           0.1.1
  * Author:            bobbingwide
  * License:           GPLv3
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html

@@ -1,32 +1,37 @@
 {
-	"apiVersion": 2,
-	"name": "oik-sb/sb-starting-block",
-	"title": "Starting block",
-	"category": "widgets",
-	"icon": "megaphone",
-  	"keywords": [ "Starting", "block", "dynamic", "static" ],
-	"description": "Starting block - Server Side Rendered",
-  	"supports": {
-		"align": true,
-		"html": false,
-		"customClassName": true,
-		"className": true,
-		"color": {
-	  		"gradients": true,
-	  		"text": true,
-	  		"background": true
-		},
-		"typography": {
-	  		"fontSize": true,
-	  		"lineHeight": true
-		},
-		"spacing": {
-	  		"margin": false,
-	  		"padding": true
-		}
-  	},
-	"textdomain": "sb-starting-block",
-	"editorScript": "file:../../build/sb-starting-block.js",
-	"editorStyle": "file:../../build/sb-starting-block.css",
-	"style": "file:../../build/style-sb-starting-block.css"
+  "apiVersion": 2,
+  "name": "oik-sb/sb-starting-block",
+  "title": "Starting block",
+  "category": "widgets",
+  "icon": "megaphone",
+  "keywords": [
+    "Starting",
+    "block",
+    "dynamic",
+    "static"
+  ],
+  "description": "Starting block - Server Side Rendered",
+  "supports": {
+    "align": true,
+    "html": false,
+    "customClassName": true,
+    "className": true,
+    "color": {
+      "gradients": true,
+      "text": true,
+      "background": true
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true
+    },
+    "spacing": {
+      "margin": false,
+      "padding": true
+    }
+  },
+  "textdomain": "sb-starting-block",
+  "editorScript": "file:../../build/sb-starting-block.js",
+  "editorStyle": "file:../../build/sb-starting-block.css",
+  "style": "file:../../build/style-sb-starting-block.css"
 }

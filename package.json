@@ -1,6 +1,6 @@
 {
 	"name": "sb-starting-block",
-	"version": "0.0.1",
+	"version": "0.1.1",
 	"description": "Starting Server Side Rendered Block",
 	"author": "bobbingwide",
 	"license": "GPL-2.0-or-later",
@@ -22,12 +22,12 @@
 		"l10n": "l10n sb-starting-block"
 	},
 	"dependencies": {
-		"@wordpress/block-editor": "^8.2.0",
-		"@wordpress/blocks": "^11.2.2",
-		"@wordpress/i18n": "^4.3.1",
+		"@wordpress/block-editor": "^12.14.0",
+		"@wordpress/blocks": "^12.23.0",
+		"@wordpress/i18n": "^4.46.0",
 		"postcss": "^8.3.6"
 	},
 	"devDependencies": {
-		"@wordpress/scripts": "^22.1.0"
+		"@wordpress/scripts": "^26.17.0"
 	}
 }

@@ -19,7 +19,8 @@
 		"dev": "wp-scripts start",
 		"makepot": "wp i18n make-pot . languages/sb-starting-block.pot --exclude=node_modules,vendor,src/*.js",
 		"makejson": "wp i18n make-json languages --no-purge",
-		"l10n": "l10n sb-starting-block"
+		"l10n": "l10n sb-starting-block",
+		"b2p": "b2p sb-starting-block"
 	},
 	"dependencies": {
 		"@wordpress/block-editor": "^12.14.0",

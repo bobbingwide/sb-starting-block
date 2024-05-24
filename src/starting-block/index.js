@@ -14,7 +14,7 @@ import Edit from './edit';
 import save from './save';
 
 import { __ } from '@wordpress/i18n';
-import classnames from 'classnames';
+//import classnames from 'classnames';
 
 import { registerBlockType, createBlock } from '@wordpress/blocks';
 import {AlignmentControl, BlockControls, InspectorControls, useBlockProps, PlainText} from '@wordpress/block-editor';

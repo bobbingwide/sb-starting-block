@@ -4,7 +4,7 @@
  * @see https://developer.wordpress.org/block-editor/packages/packages-i18n/
  */
 import { __ } from '@wordpress/i18n';
-import classnames from 'classnames';
+import clsx from 'clsx';
 
 /**
  * React hook that is used to mark the block wrapper element.
@@ -34,7 +34,7 @@ import './editor.scss';
 export default function Edit ( { attributes, className, isSelected, setAttributes } ) {
 	const { textAlign } = attributes;
 	const blockProps = useBlockProps( {
-		className: classnames( {
+		className: clsx( {
 			[ `has-text-align-${ textAlign }` ]: textAlign,
 		} ),
 	} );

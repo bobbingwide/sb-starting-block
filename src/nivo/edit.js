@@ -53,7 +53,21 @@ var mappedEffectOptions = [
 	{ label: "Box rain grow reverse", value: "boxRainGrowReverse" },
 	{ label: "Slide in left", value: "slideInLeft" },
 	{ label: "Slide in right", value: "slideInRight" }
-]
+];
+
+/* y, n, file, full */
+var mappedLinkOptions = [
+	{ label: "Yes", value: 'y'},
+	{ label: "No", value: 'n' },
+	{ label: "File", value: 'file'},
+	{ label: "Full", value: 'full'}
+];
+
+/* y n */
+var mappedCaptionOptions = [
+	{ label: "Yes", value: 'y'},
+	{ label: "No", value: 'n' }
+];
 
 /**
  * The edit function describes the structure of your block in the context of the
@@ -77,12 +91,21 @@ export default function Edit ( { attributes, className, isSelected, setAttribute
 	const onChangeEffect = ( event ) => {
 		setAttributes( { effect: event } );
 	};
+	const onChangeLink = ( event ) => {
+		setAttributes( { link: event } );
+	};
+	const onChangeCaption = ( event ) => {
+		setAttributes( { caption: event } );
+	};
 	return (
 		<div { ...blockProps}>
 			<InspectorControls>
 				<PanelBody>
 					<SelectControl label={__( "Theme", 'oik-nivo-slider') } value={attributes.theme} onChange={onChangeTheme} options={mappedThemeOptions} />
 					<SelectControl label={__( "Effect", 'oik-nivo-slider') } value={attributes.effect} onChange={onChangeEffect} options={mappedEffectOptions} />
+					<SelectControl label={__( "Link", 'oik-nivo-slider') } value={attributes.link} onChange={onChangeLink} options={mappedLinkOptions} />
+					<SelectControl label={__( "Caption", 'oik-nivo-slider') } value={attributes.caption} onChange={onChangeCaption} options={mappedCaptionOptions} />
+
 				</PanelBody>
 
 			</InspectorControls>

@@ -19,6 +19,14 @@
 		"effect": {
 			"type": "string",
 			"default": ""
+		},
+		"link": {
+			"type": "string",
+			"default": "n"
+		},
+		"caption": {
+			"type": "string",
+			"default": "n"
 		}
 	},
 	"supports": {

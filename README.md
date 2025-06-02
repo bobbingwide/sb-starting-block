@@ -2,8 +2,8 @@
 ![banner](assets/sb-starting-block-banner-772x250.jpg)
 * Contributors:      bobbingwide
 * Tags:              block, starting, scaffold, SSR, static
-* Tested up to:      6.4.1
-* Stable tag:        0.1.1
+* Tested up to:      6.8.1
+* Stable tag:        1.0.0
 * License:           GPLv3
 * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -23,7 +23,8 @@ module.exports = {
 	...defaultConfig,
 * 	entry: {
 * 		'sb-starting-block': './src/starting-block',
-* 		'second-block': './src/second-block'
+* 		'second-block': './src/second-block',
+* 		'nivo': './src/nivo'
 	},
 };
 ```
@@ -48,7 +49,6 @@ style contains the CSS for both the front end and the block editor
 An additional file suffixed `.asset.php` is produced for each entry point.
 Used during block registration, it lists the package dependencies for the block editor.
 
-The build process requires wp-scripts v26.17.0 or later.
 
 ### Internationalization and Localization 
 At build time `wp-scripts` copies each `block.json` file into a subdirectory of the `build` folder.
@@ -84,48 +84,21 @@ You should not need to activate this plugin. If you do, it's just like any other
 3. Second block - editor display, bbboing language
 
 ## Upgrade Notice 
-# 0.1.1 
-Update for support for PHP 8.1 and PHP 8.2
+# 1.0.0 
+Now builds the Nivo slider block ( oik-nivo-slider/nivo ) for the oik-nivo-slider plugin.
 
-# 0.1.0 
-Update for each block's components packaged separately.
-
-# 0.0.1 
-Update for an internationalized / localized version with multiple blocks.
-
-# 0.0.0 
-First version to be used to replace any `[your name here]` shortcodes in FSE themes
 
 ## Changelog 
-# 0.1.1 
-* Changed: Add PHPUnit tests for PHP 8.1 and PHP 8.2 #4
+# 1.0.0 
+* Changed: Update build files #5
+* Changed: Update wp-scripts to v30.17.0 #5
 * Changed: Update build files #3
-* Changed: Updated wp-scripts #3
-* Tested: With WordPress 6.4.1 and WordPress Multisite
-* Tested: With Gutenberg 17.0.2
-* Tested: With PHP 8.1 and PHP 8.2
+* Changed: Nivo: Add Link and Caption options #5
+* Changed: Update wp-scripts to v27.9.0. Add dependency on clsx. #5
+* Changed: Switch to clsx from classname. Add Theme and Effect SelectControls for Nivo #5
+* Added: Add nivo block - to test b2p - build to plugin #5
+* Tested: With WordPress 6.8.1 and WordPress Multisite
+* Tested: With Gutenberg 20.9.0
+* Tested: With PHP 8.3 and PHP 8.4
 * Tested: With PHPUnit 9.6
 
-# 0.1.0 
-* Changed: Update language files [#3](https://github.com/bobbingwide/sb-starting-block/issues/3)
-* Changed: Update build files #3
-* Changed: Changes after npm run package-update #3
-* Changed: Update server logic for multiple entry points #3
-* Changed: Update src to help to demonstrate multiple entry points #3
-* Changed: Add webpack.config.js for multiple entry points #3
-* Tested: With WordPress 5.9.1 and WordPress Multi Site
-* Tested: With Gutenberg 12.7.0
-* Tested: With PHP 8.0
-
-# 0.0.1 
-* Changed: Added oik-sb/second-block,[#2](https://github.com/bobbingwide/sb-starting-block/issues/2)
-* Changed: Internationalized and localized into UK English and bbboing ( locale bb_BB ),[#2](https://github.com/bobbingwide/sb-starting-block/issues/2)
-* Tested: With WordPress 5.8.1 and WordPress Multi Site
-* Tested: With Gutenberg 11.5.1
-* Tested: With PHP 8.0
-
-# 0.0.0 
-* Added: First version of the server side rendered block,[#1](https://github.com/bobbingwide/sb-starting-block/issues/1)
-* Tested: With WordPress 5.7.1 and WordPress Multi Site
-* Tested: With Gutenberg 10.6.0-rc.1
-* Tested: With PHP 8.0

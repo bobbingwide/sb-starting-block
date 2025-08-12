@@ -4,6 +4,7 @@ module.exports = {
 	entry: {
 		'sb-starting-block': './src/starting-block',
 		'second-block': './src/second-block',
-		'nivo': './src/nivo'
+		'nivo': './src/nivo',
+		'children': './src/children'
 	},
 };

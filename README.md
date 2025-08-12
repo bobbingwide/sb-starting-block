@@ -2,8 +2,8 @@
 ![banner](assets/sb-starting-block-banner-772x250.jpg)
 * Contributors:      bobbingwide
 * Tags:              block, starting, scaffold, SSR, static
-* Tested up to:      6.8.1
-* Stable tag:        1.0.0
+* Tested up to:      6.8.2
+* Stable tag:        1.1.0
 * License:           GPLv3
 * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -24,7 +24,8 @@ module.exports = {
 * 	entry: {
 * 		'sb-starting-block': './src/starting-block',
 * 		'second-block': './src/second-block',
-* 		'nivo': './src/nivo'
+* 		'nivo': './src/nivo',
+* 		'children': './src/children'
 	},
 };
 ```
@@ -84,21 +85,15 @@ You should not need to activate this plugin. If you do, it's just like any other
 3. Second block - editor display, bbboing language
 
 ## Upgrade Notice 
-# 1.0.0 
-Now builds the Nivo slider block ( oik-nivo-slider/nivo ) for the oik-nivo-slider plugin.
-
+# 1.1.0 
+Now builds the Children block ( oik-sb/children ) for the sb-children-block plugin.
 
 ## Changelog 
-# 1.0.0 
-* Changed: Update build files #5
-* Changed: Update wp-scripts to v30.17.0 #5
-* Changed: Update build files #3
-* Changed: Nivo: Add Link and Caption options #5
-* Changed: Update wp-scripts to v27.9.0. Add dependency on clsx. #5
-* Changed: Switch to clsx from classname. Add Theme and Effect SelectControls for Nivo #5
-* Added: Add nivo block - to test b2p - build to plugin #5
-* Tested: With WordPress 6.8.1 and WordPress Multisite
-* Tested: With Gutenberg 20.9.0
+# 1.1.0 
+* Changed: Rebuild using wp-scripts v30.21.0 #6
+* Added: Build the oik-sb/children block for sb-children-block #6
+* Changed: Update PHPUnit to 10 & 11
+* Tested: With WordPress 6.8.2 and WordPress Multisite
+* Tested: With Gutenberg 21.3.0
 * Tested: With PHP 8.3 and PHP 8.4
-* Tested: With PHPUnit 9.6
-
+* Tested: With PHPUnit 9, 10 & 11

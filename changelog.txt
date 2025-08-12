@@ -1,4 +1,7 @@
 == Upgrade Notice ==
+= 1.0.0 =
+Now builds the Nivo slider block ( oik-nivo-slider/nivo ) for the oik-nivo-slider plugin.
+
 = 0.1.1 =
 Update for support for PHP 8.1 and PHP 8.2
 
@@ -13,6 +16,19 @@ First version to be used to replace any `[your name here]` shortcodes in FSE the
 
 
 == Changelog ==
+= 1.0.0 =
+* Changed: Update build files #5
+* Changed: Update wp-scripts to v30.17.0 #5
+* Changed: Update build files #3
+* Changed: Nivo: Add Link and Caption options #5
+* Changed: Update wp-scripts to v27.9.0. Add dependency on clsx. #5
+* Changed: Switch to clsx from classname. Add Theme and Effect SelectControls for Nivo #5
+* Added: Add nivo block - to test b2p - build to plugin #5
+* Tested: With WordPress 6.8.1 and WordPress Multisite
+* Tested: With Gutenberg 20.9.0
+* Tested: With PHP 8.3 and PHP 8.4
+* Tested: With PHPUnit 9.6
+
 = 0.1.1 =
 * Changed: Add PHPUnit tests for PHP 8.1 and PHP 8.2 #4
 * Changed: Update build files #3
